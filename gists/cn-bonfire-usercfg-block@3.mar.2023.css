@@ -1,0 +1,74 @@
+/* THEME STYLES: This is here because it is the defult, normally this would be 
+an external stylesheet on the users computer in the app. Custom themes are not 
+supported on the web client version*/
+[theme*="ctp-mocha"] { 
+
+    /* Colors source: https://github.com/catppuccin/catppuccin#-palette */
+
+    /* The following variables are NOT used by code and can be whatever you want. */
+    --red: rgb(243, 139, 168);
+    --maroon: rgb(235, 160, 172);
+    --orange: rgb(250, 179, 135);
+    --yellow: rgb(249, 226, 175);
+    --green: rgb(166, 227, 161);
+    --teal: rgb(148, 226, 213);
+    --sky: rgb(137, 220, 235);
+    --sapphire: rgb(116, 199, 236);
+    --blue: rgb(137, 180, 250);
+    --violet: rgb(180, 190, 254);
+    
+    /* All the rest of the variables ARE used by code and changing thier 
+     * names WILL break things. */
+    --accent-color-rgb: var(--sapphire);
+    --accent-color: var(--sapphire);
+    --hilight-color: rgb(116, 199, 236, 0.5);
+
+    --color-danger: var(--red);
+    --color-danger-disabled: rgb(243, 139, 168, 0.25);
+
+    --color-warning: var(--yellow);
+    --color-safe: var(--green);
+    --color-cta: var(--accent-color);
+
+    --group-bar-color: rgb(17, 17, 27);
+    --border-color: rgb(17, 17, 27);
+    --channels-bar-color: rgb(24, 24, 37);
+    --ui-box-color: rgb(24, 24, 37);
+    --overlay-darken-color: rgb(0, 0, 0, 0.45);
+
+    --color-base: rgb(30, 30, 46);
+
+    --text-color: rgb(198, 208, 245);
+    --text-muted: rgb(161, 168, 201);
+    --link-color: var(--sapphire);
+    --link-text-decoration: none;
+
+    --main-font: sans-serif;
+    --display-font: var(--main-font);
+    --code-font: 'Hack', monospace;
+
+    --groups-bar-width: 4rem;
+    --channels-bar-width: clamp(12rem, 13.5vw, 30rem);
+    --font-family: 'Noto Sans', sans-serif;
+    /* 'Atkinson Hyperlegible', */
+
+    --border-icon-radius: 1000rem; /* Always circle or capsule */
+    --border-ui-box-radius: 6px;
+
+    --textarea-max-height: 70vh;
+
+    --round-button-size: 2.25rem;
+
+    --large-margin: 0.75rem;
+    --large-padding: 0.75rem;
+
+    --standard-margin: 0.5rem;
+    --standard-padding: 0.5rem;
+
+    --small-margin: 0.25rem;
+    --small-padding: 0.25rem;
+
+    --message-spacing: 0.5rem;
+
+    --popup-delay: 1000ms; 
+}
